@@ -1,4 +1,4 @@
-site_name: life and times
+site_name: scrapbook
 
 theme:
     name: 'material'
@@ -8,7 +8,7 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: blue grey
-      accent: indigo
+      accent: teal
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
@@ -17,7 +17,7 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: blue grey
-      accent: blue
+      accent: teal
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
@@ -42,7 +42,7 @@ theme:
 markdown_extensions:
   - footnotes
   - admonition
-  # - attr_list
+  - attr_list
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.superfences
