@@ -22,7 +22,7 @@ Linear and logistic regression are the simplest models used in supervised learni
 **Linear regression** is used to model a dependent variable by fitting a straight line as close as possible to the data points
 
 $$
-y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n
+y = w_0 + w_1 x_1 + w_2 x_2 + \dots + w_n x_n
 $$
 
 by minimising the mean square error 
@@ -52,7 +52,7 @@ Minimising the cross-entropy is equivalent to maximising log likelihood of the t
 **Multinomial logistic regression** is an extension of logistic regression to cover categorical classifications. For $K$ classes the model computes the linear decision boundary (logit) for each class 
 
 $$
-z_k ​= \beta_{0,k}​+\beta_{1,k​}x_1​+\beta_{2,k}​x_2​+\dots+\beta_{n,k}​x_n​
+z_k ​= w_{0,k}​+w_{1,k​}x_1​+w_{2,k}​x_2​+\dots+w_{n,k}​x_n​
 $$
 
 and then converts these into probabilities using the softmax function
