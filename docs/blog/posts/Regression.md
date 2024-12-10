@@ -49,7 +49,7 @@ Minimising the cross-entropy is equivalent to maximising log likelihood of the t
 
 ## Categorical classification ##
 
-**Multinomial logistic regression** is an extension of logistic regression to cover categorical classifications. For $k$ classes the model computes the linear decision boundary (logit) for each class 
+**Multinomial logistic regression** is an extension of logistic regression to cover categorical classifications. For $K$ classes the model computes the linear decision boundary (logit) for each class 
 
 $$
 z_k ​= \beta_{0,k}​+\beta_{1,k​}x_1​+\beta_{2,k}​x_2​+\dots+\beta_{n,k}​x_n​
