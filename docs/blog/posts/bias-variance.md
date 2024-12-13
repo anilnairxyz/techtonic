@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2024-11-30
+date: 2024-10-03
 slug: bv
 categories:
   - learning

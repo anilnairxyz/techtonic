@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2024-12-09
+date: 2024-10-02
 slug: regression
 categories:
   - learning
@@ -33,13 +33,13 @@ $$
 
 ## Linear binary classification ##
 
-Linear regression can also be used for binary classification, however in classification problems the goal is to find the probability of a data point belonging to a certain class. Linear regression being unbounded is unsuitable for this purpose. **Logistic regression** simply adds a non-linear sigmoid function to the output of a linear regression (the logit) to bound the values to legitimate probabilities. 
+Linear regression can also be used for binary classification, however in classification problems the goal is to find the probability of a data point belonging to a certain class. Linear regression being unbounded is unsuitable for this purpose. **Logistic regression** simply adds a non-linear sigmoid function to the output of a linear regression (the logit) to bound the values to legitimate probabilities.
 
 $$
 p = \sigma(z) = \frac{1}{1 + e^{−z}​}
 $$
 
-Since we are trying to model probability distributions here, the loss we try to minimise here is the cross-entropy between the sample distribution and the predicted distribution 
+Since we are trying to model probability distributions here, the loss we try to minimise here is the cross-entropy between the sample distribution and the predicted distribution
 
 $$
 Loss  = -\frac{1}{N}\sum_{i=1}^{N}​[y_i​\log(p_i​)+(1−y_i​)\log(1−p_i​)]
@@ -69,4 +69,10 @@ The main aim of regularisation is to prevent overfitting and improve generalisat
 
 1. **L1 regularisation (Lasso)** for feature selection (driving certain coefficients to zero) of the most important features encouraging sparsity of the model
 3. **L2 regularisation (Ridge)** prevents overfitting by constraining the weights (shrinking the coefficients) thereby reducing the variance of the model
+
+## Limitations ##
+
+There is a limited subset of problems that lend itself to a ** linear decision boundary**. For example the simple XOR problem cannot be solved by logistic regression.
+
+Another limitation is the sensitivity to feature scaling. Normalisation techniques can help here, but at the end of the day we are tampering with the input data thereby introducing inefficiencies.
 
