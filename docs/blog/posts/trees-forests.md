@@ -7,6 +7,7 @@ categories:
 tags:
   - ml
   - classification
+  - ensemble
 ---
 
 
@@ -35,4 +36,4 @@ A comprehensive decision tree exactly mimics the training data with each leaf no
 
 Bagging is an **ensemble technique** to reduce variability and overfitting by creating different trees and taking a majority vote of the predictions. 
 
-In **random forests** the different trees are trained using bootstrapped samples (repeatedly sampling from the training set with *replacement*). Additionally each tree also uses a random subset of features at each split. These randomisations and sampling methods further de-correlates the trees, typically leading to better performance.
+In **random forests** the different trees are trained using bootstrapped samples (repeatedly sampling from the training set with *replacement*). Additionally each tree also uses a random subset of features at each split. These randomisations and sampling methods further de-correlate the trees, typically leading to better performance.
