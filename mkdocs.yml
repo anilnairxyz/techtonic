@@ -1,4 +1,5 @@
 site_name: techtonic
+site_url: https://anilnairxyz.github.io/techtonic
 
 theme:
     name: 'material'
